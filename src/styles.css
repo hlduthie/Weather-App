@@ -1,0 +1,173 @@
+body {
+  background-color: #32323c;
+  border: solid black;
+  border-width: 10px;
+  margin-top: 30px;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+h1.neonText {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #ff73ed;
+  text-shadow: 0 0 7px #fff, 0 0 20px #ff73ed;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+span.currentDay {
+  color: #1b1b20;
+  font-size: medium;
+  font-family: "Montserrat", sans-serif;
+  margin: 380px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  font-size: small;
+  text-align: center;
+  color: #ff73ed;
+  text-shadow: 0 0 7px #fff, 0 0 20px #ff73ed;
+  padding: 10px;
+}
+
+i.currenttemp-icon {
+  color: black;
+  font-size: 100px;
+  text-align: center;
+  padding: 10px;
+}
+
+h3.current-temp {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: #ff73ed;
+  text-shadow: 0 0 7px #fff, 0 0 20px #ff73ed;
+  padding: 5px;
+}
+
+li#celcius {
+  font-family: "Roboto", sans-serif;
+  font-size: larger;
+  margin: -200px;
+  color: #ff73ed;
+  text-shadow: 0 0 7px #fff, 0 0 20px #ff73ed;
+  padding-top: 5px;
+  text-decoration: none;
+}
+
+p.following-temp {
+  font-family: "Roboto", sans-serif;
+  font-size: small;
+  text-align: center;
+  color: #eca462;
+  text-shadow: 0 0 7px #fff, 0 0 20px #eca462;
+}
+
+p.following-days {
+  font-family: "Roboto", sans-serif;
+  font-size: larger;
+  text-align: center;
+  color: #eca462;
+  text-shadow: 0 0 7px #fff, 0 0 20px #eca462;
+}
+
+i.weather-icon {
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  display: grid;
+  grid-template-areas: center;
+}
+
+.input-city {
+  background-color: #32323c;
+  color: #1b1b20;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  border: #1b1b20 solid transparent;
+  box-sizing: inherit;
+}
+
+.input-city::placeholder {
+  color: #1b1b20;
+  border: #1b1b20;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+button {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+button {
+  position: relative;
+  border: none;
+  font-size: 18px;
+  transition: color 0.5s, transform 0.2s, background-color 0.2s;
+  outline: none;
+  border-radius: 3px;
+  margin: 0 8px;
+  padding: 5px 8px;
+  border: 3px solid transparent;
+}
+button:active {
+  transform: translateY(3px);
+}
+button::after,
+button::before {
+  border-radius: 3px;
+}
+.material-bubble {
+  background-color: transparent;
+  color: #1b1b20;
+  border: none;
+  overflow: hidden;
+  box-shadow: none;
+}
+.material-bubble:hover {
+  color: #e6e6e6;
+}
+.material-bubble::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #32323c;
+  transition: opacity 0.3s, border 0.3s;
+}
+.material-bubble:hover::before {
+  opacity: 0;
+}
+.material-bubble::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #494958;
+  border-color: transparent;
+  border-radius: 50%;
+  transform: translate(-10px, -70px) scale(0.1);
+  opacity: 0;
+  z-index: -1;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+}
+.material-bubble:hover::after {
+  opacity: 1;
+  transform-origin: 100px 100px;
+  transform: scale(1) translate(-10px, -70px);
+}

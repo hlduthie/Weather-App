@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c1dcae52de.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Homework</title>
+  </head>
+  <body>
+    <span class="currentDay"></span>
+
+    <!--Temperature for the current city the user is in-->
+    <div class="container">
+      <div class="row">
+        <!--The current city name-->
+        <h1 class="currentCity neonText" id="city"></h1>
+        <br />
+        <!--Weather icon-->
+        <i class="fas fa-sun currenttemp-icon"></i>
+        <br />
+
+        <!--temperature-->
+
+        <div class="col-12">
+          <h3 class="current-temp neonText"></h3>
+        </div>
+      </div>
+
+      <!--Grid for the current city's temperature for the next 5 days-->
+      <div class="row">
+        <div class="col-3">
+          <p class="following-days">Day 2</p>
+          <i class="fas fa-cloud-sun weather-icon"></i>
+          <br />
+          <p class="following-temp neonText">17°C</p>
+        </div>
+
+        <div class="col-3">
+          <p class="following-days">Day 3</p>
+          <i class="fas fa-cloud-sun weather-icon"></i>
+          <br />
+          <p class="following-temp neonText">14°C</p>
+        </div>
+
+        <div class="col-3">
+          <p class="following-days">Day 4</p>
+          <i class="fas fa-cloud-sun-rain weather-icon"></i>
+          <br />
+          <p class="following-temp neonText">13°C</p>
+        </div>
+
+        <div class="col-3">
+          <p class="following-days">Day 5</p>
+          <i class="fas fa-cloud-sun-rain weather-icon"></i>
+          <br />
+          <p class="following-temp neonText">16°C</p>
+        </div>
+
+        <div class="col-12">
+          <p class="following-days">Day 6</p>
+          <i class="fas fa-sun weather-icon"></i>
+          <br />
+          <p class="following-temp neonText">17°C</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container1">
+      <form class="citySearch">
+        <input type="text" class="input-city" placeholder="Enter a city" />
+        <button class="material-bubble submitButton">Submit</button>
+      </form>
+    </div>
+
+    <div class="container2">
+      <button class="material-bubble getCurrentLocation">
+        Current Location
+      </button>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
