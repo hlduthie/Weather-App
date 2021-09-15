@@ -20,18 +20,9 @@ span.currentDay {
   color: #1b1b20;
   font-size: medium;
   font-family: "Montserrat", sans-serif;
-  margin: 380px;
+  margin: 400px;
   padding: 0;
   text-transform: uppercase;
-}
-
-a {
-  font-family: "Roboto", sans-serif;
-  font-size: small;
-  text-align: center;
-  color: #ff73ed;
-  text-shadow: 0 0 7px #fff, 0 0 20px #ff73ed;
-  padding: 10px;
 }
 
 i.currenttemp-icon {
